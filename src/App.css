@@ -41,6 +41,7 @@
   color: #888;
 }
 
-.teams {
-  background-color: red;
+.table-teams {
+  background-color: rgb(97, 97, 97);
+  border-radius: 10px;
 }

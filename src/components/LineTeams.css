@@ -1,6 +1,6 @@
 .lineTeam{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
 }
 
@@ -12,3 +12,16 @@ input{
 
 }
 
+.lines{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.adjust{
+    display: flex;
+    width: 180px;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
