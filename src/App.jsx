@@ -8,7 +8,7 @@ function App() {
     <>
     <h1>Fase de grupos</h1>
     <div className="table-teams">
-      <h2>Times</h2>
+      <h2 className='title'>Times</h2>
       <LineTeams games={games}/>
     </div>
     </>
