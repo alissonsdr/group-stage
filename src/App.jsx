@@ -1,5 +1,6 @@
 import './App.css'
 import LineTeams from './components/LineTeams'
+import {games} from "./data/games";
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
     <h1>Fase de grupos</h1>
     <div className="table-teams">
       <h2>Times</h2>
-      <LineTeams/>
+      <LineTeams games={games}/>
     </div>
     </>
   )
