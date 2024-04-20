@@ -5,14 +5,27 @@
   text-align: center;
 }
 
-.table-teams {
+.table {
   background-color: rgb(97, 97, 97);
   border-radius: 10px;
   width: 550px;
-  height: 400px;
+  height: 430px;
 }
 
-.title{
+.title {
   padding: 20px;
   margin: 0;
+}
+
+.align-tables {
+  display: flex;
+  gap: 20px;
+}
+
+.group {
+  font-weight: 900;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  color: white;
 }
