@@ -3,6 +3,7 @@ import './LineTeams.css';
 
 const LineTeams = ({ games }) => {
 
+
   return (
     <div className='lineTeam'>
       <h2 className='title'>Seleções</h2>

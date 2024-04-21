@@ -1,15 +1,15 @@
-import gremio from '../img/gremio.png'
-import internacional from '../img/internacional.png'
-import bahia from '../img/bahia.png'
-import palmeiras from '../img/palmeiras.png'
+import senegal from '../img/senegal.png'
+import holanda from '../img/holanda.png'
+import qatar from '../img/qatar.png'
+import equador from '../img/equador.png'
 
-export const images = [gremio, internacional, bahia, palmeiras]
+export const images = [senegal, holanda, qatar, equador]
 
 export const teams = [
-  {team: 'Grêmio'},
-  {team: 'Inter'},
-  {team: 'Bahia'},
-  {team: 'Palmeiras'}
+  {team: 'Senegal'},
+  {team: 'Holanda'},
+  {team: 'Qatar'},
+  {team: 'Equador'}
 ]
 
 export const games = [

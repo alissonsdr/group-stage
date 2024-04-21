@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>Copa do Brasil - 2024</h1>
+      <h1>Copa do Mundo - 2026</h1>
       <div className='align-tables'>
         <div className="table">
           <LineTeams games={games} />
