@@ -48,22 +48,18 @@ img {
 
 .away {
     text-align: start;
+    display: flex;
+    align-items: center;
 }
 
 .home {
     text-align: end;
-}
-
-.button {
-    width: 100px;
-}
-
-.button:focus {
-    outline: none;
+    display: flex;
+    align-items: center;
 }
 
 .buttons {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin: 20px;
 }

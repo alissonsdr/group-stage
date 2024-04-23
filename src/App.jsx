@@ -2,7 +2,7 @@ import './App.css'
 import Classification from './components/Classification';
 import LineTeams from './components/LineTeams'
 import { games } from "./data/games";
-import { teams } from "./data/games"
+import { teamsImages } from "./data/games"
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
         </div>
         <div className='group'>Grupo A</div>
         <div className="table">
-          <Classification teams={teams}/>
+          <Classification teamsImages = {teamsImages}/>
         </div>
       </div>
     </>

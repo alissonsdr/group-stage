@@ -1,7 +1,7 @@
 import React from 'react'
 import './Classification.css'
 
-const Classification = ({ teams }) => {
+const Classification = ({ teamsImages }) => {
     return (
         <div className='classification'>
             <h2 className='title'>Classificação Grupo A</h2>
@@ -18,7 +18,7 @@ const Classification = ({ teams }) => {
                     <th>PT</th>
                 </thead>
                 <tbody>
-                {teams.map((team, i) => {
+                {teamsImages.map((team, i) => {
                         return (
                             <tr key={i}>
                                 <td>{team.team}</td>
