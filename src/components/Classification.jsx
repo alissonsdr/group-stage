@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Classification.css'
 
-const Classification = ({ teamsImages }) => {
+const Classification = ({ teamsInfos, game }) => {
+
+    const [quantityGames, setQuantityGames] = useState(0)
+    
+    
     return (
         <div className='classification'>
             <h2 className='title'>Classificação Grupo A</h2>
@@ -18,11 +22,11 @@ const Classification = ({ teamsImages }) => {
                     <th>PT</th>
                 </thead>
                 <tbody>
-                {teamsImages.map((team, i) => {
+                    {teamsInfos.map((team, i) => {
                         return (
                             <tr key={i}>
                                 <td>{team.team}</td>
-                                <td>0</td>
+                                <td>{quantityGames}</td>
                                 <td>0</td>
                                 <td>0</td>
                                 <td>0</td>

@@ -1,25 +1,13 @@
 import React from 'react'
 import './Buttons.css'
 
-const Buttons = ({ text, func }) => {
-
-    const handleFunction = () => {
-
-        func == 'clear' ? (
-            console.log("clear")
-        ) : (
-            console.log("save")
-        )
-        
-    }
-    
-
+const Buttons = ({ text, onClick }) => {
 
     return (
         <div>
             <button
                 className='button'
-                onClick={handleFunction}
+                onClick={onClick}
             >{text}</button>
         </div>
 
