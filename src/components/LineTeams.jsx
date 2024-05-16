@@ -3,10 +3,9 @@ import './LineTeams.css';
 import Buttons from './Buttons';
 import Inputs from './Inputs';
 
-const LineTeams = ({ game, setGame }) => {
+const LineTeams = ({ game, setGame , onClick, valueHome, valueAway, setValueAway, setValueHome}) => {
 
-  const [valueHome, setValueHome] = useState("")
-  const [valueAway, setValueAway] = useState("")
+
 
   const handleHome = (e, i) => {
 
@@ -49,12 +48,12 @@ const LineTeams = ({ game, setGame }) => {
             <div className='team home'>{game.homeTeam} </div>
             <img src={game.homeImage} />
             <Inputs
-              type="number"
+              // type="number"
               value={valueHome[i]}
               onChange={(e) => handleHome(e, i)} />
             <span className='vs'>X</span>
             <Inputs
-              type="number"
+              // type="number"
               value={valueAway[i]}
               onChange={(e) => handleAway(e, i)} />
             <img src={game.awayImage} />
@@ -63,7 +62,7 @@ const LineTeams = ({ game, setGame }) => {
         );
       })}
       <div className="buttons">
-        <Buttons text="Limpar" />
+        <Buttons text="Limpar" onClick={onClick} />
         <Buttons text="Salvar" />
       </div>
     </div>

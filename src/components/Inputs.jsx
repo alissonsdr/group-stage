@@ -6,7 +6,7 @@ const Inputs = ({ type, value, onChange }) => {
     return (
         <div>
             <input 
-            type={type}
+            // type={type}
             value={value}
             onChange={onChange}/>
         </div>

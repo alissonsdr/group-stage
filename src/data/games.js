@@ -17,8 +17,8 @@ export const games = [
       dateGame: '21/04',
       homeImage: teamsInfos[0].image,
       awayImage: teamsInfos[1].image,
-      scoreHome: 0,
-      scoreAway: 0
+      scoreHome: "",
+      scoreAway: ""
   },
   { 
       homeTeam: teamsInfos[3].team, 
@@ -26,8 +26,8 @@ export const games = [
       dateGame: '23/04',
       homeImage: teamsInfos[3].image,
       awayImage: teamsInfos[2].image,
-      scoreHome: 0,
-      scoreAway: 0
+      scoreHome: "",
+      scoreAway: ""
   },
   { 
       homeTeam: teamsInfos[3].team, 
@@ -35,8 +35,8 @@ export const games = [
       dateGame: '25/04',
       homeImage: teamsInfos[3].image,
       awayImage: teamsInfos[0].image,
-      scoreHome: 0,
-      scoreAway: 0
+      scoreHome: "",
+      scoreAway: ""
   },
   { 
       homeTeam: teamsInfos[1].team, 
@@ -44,8 +44,8 @@ export const games = [
       dateGame: '28/04',
       homeImage: teamsInfos[1].image,
       awayImage: teamsInfos[2].image,
-      scoreHome: 0,
-      scoreAway: 0
+      scoreHome: "",
+      scoreAway: ""
   },
   { 
       homeTeam: teamsInfos[2].team, 
@@ -53,8 +53,8 @@ export const games = [
       dateGame: '20/04',
       homeImage: teamsInfos[2].image,
       awayImage: teamsInfos[0].image,
-      scoreHome: 0,
-      scoreAway: 0
+      scoreHome: "",
+      scoreAway: ""
   },
   { 
       homeTeam: teamsInfos[1].team, 
@@ -62,8 +62,8 @@ export const games = [
       dateGame: '25/04',
       homeImage: teamsInfos[1].image,
       awayImage: teamsInfos[3].image,
-      scoreHome: 0,
-      scoreAway: 0
+      scoreHome: "",
+      scoreAway: ""
   }
 ];
 
