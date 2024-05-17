@@ -3,34 +3,24 @@ import './LineTeams.css';
 import Buttons from './Buttons';
 import Inputs from './Inputs';
 
-const LineTeams = ({ game, setGame , onClick, valueHome, valueAway, setValueAway, setValueHome}) => {
-
-
+const LineTeams = ({ game, setGame , onClick }) => {
 
   const handleHome = (e, i) => {
-
     const inputValue = e.target.value
+    console.log(inputValue)
 
     if (inputValue.length <= 2) {
-      const newValue = [...valueHome]
-      newValue[i] = inputValue
-      setValueHome(newValue)
-
       const newGame = [...game]
+      console.log(newGame)
       newGame[i].scoreHome = inputValue
+      console.log(newGame)
       setGame(newGame)
     }
   }
 
   const handleAway = (e, i) => {
-
     const inputValue = e.target.value
-
     if (inputValue.length <= 2) {
-      const newValue = [...valueAway]
-      newValue[i] = inputValue
-      setValueAway(newValue)
-
       const newGame = [...game]
       newGame[i].scoreAway = inputValue
       setGame(newGame)
@@ -48,13 +38,13 @@ const LineTeams = ({ game, setGame , onClick, valueHome, valueAway, setValueAway
             <div className='team home'>{game.homeTeam} </div>
             <img src={game.homeImage} />
             <Inputs
-              // type="number"
-              value={valueHome[i]}
+              type="number"
+              value={game.scoreHome}
               onChange={(e) => handleHome(e, i)} />
             <span className='vs'>X</span>
             <Inputs
-              // type="number"
-              value={valueAway[i]}
+              type="number"
+              value={game.scoreAway}
               onChange={(e) => handleAway(e, i)} />
             <img src={game.awayImage} />
             <span className='team away'> {game.awayTeam}</span>

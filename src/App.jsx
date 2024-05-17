@@ -8,20 +8,19 @@ import { teamsInfos } from "./data/games"
 function App() {
 
   const [game, setGame] = useState(games)
-  const [valueHome, setValueHome] = useState("")
-  const [valueAway, setValueAway] = useState("")
 
   const clear = () => {
+    
     const clearGame = [...game]
+
+    console.log(clearGame)
 
     clearGame.map((game) =>{
       game.scoreHome = ""
-      game.scoreAway= ""
+      game.scoreAway = ""
     })
 
     setGame(clearGame)
-    setValueAway("")
-    setValueHome("")
   }
 
   return (
@@ -31,10 +30,9 @@ function App() {
         <div className="table">
           <LineTeams 
           game={game} 
-          setGame={setGame} 
+          setGame={setGame}
           onClick={clear} 
-          valueHome={valueHome} valueAway={valueAway} 
-          setValueAway={setValueAway} setValueHome={setValueHome}/>
+           />
         </div>
         <div className='group'>Grupo A</div>
         <div className="table">
