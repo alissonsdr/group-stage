@@ -3,17 +3,13 @@ import './LineTeams.css';
 import Buttons from './Buttons';
 import Inputs from './Inputs';
 
-const LineTeams = ({ game, setGame , onClick }) => {
+const LineTeams = ({ game, setGame , clear, QuantityGames }) => {
 
   const handleHome = (e, i) => {
     const inputValue = e.target.value
-    console.log(inputValue)
-
     if (inputValue.length <= 2) {
       const newGame = [...game]
-      console.log(newGame)
       newGame[i].scoreHome = inputValue
-      console.log(newGame)
       setGame(newGame)
     }
   }
@@ -30,7 +26,8 @@ const LineTeams = ({ game, setGame , onClick }) => {
 
   return (
     <div className='lineTeam'>
-      <h2 className='title'>Seleções</h2>
+      <h2 className='subTitle'>Seleções</h2>
+      
       {game.map((game, i) => {
         return (
           <div className='lines' key={i}>
@@ -51,9 +48,10 @@ const LineTeams = ({ game, setGame , onClick }) => {
           </div>
         );
       })}
+
       <div className="buttons">
-        <Buttons text="Limpar" onClick={onClick} />
-        <Buttons text="Salvar" />
+        <Buttons text="Limpar" onClick={clear} />
+        <Buttons text="Salvar" onClick={QuantityGames}/>
       </div>
     </div>
   );

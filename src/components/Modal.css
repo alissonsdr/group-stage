@@ -1,0 +1,32 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: rgb(255, 64, 64);
+    padding: 20px;
+    border-radius: 4px;
+    position: relative;
+    width: 187px;
+    max-width: 100%;
+    color: black;
+    height: 4px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 336px;
+  }
+  
+  .children{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+  }

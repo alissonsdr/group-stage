@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import './Classification.css'
 
-const Classification = ({ teamsInfos, game }) => {
-
-    const [quantityGames, setQuantityGames] = useState(0)
-    
+const Classification = ({ teamsInfos, game, quantity, setQuantity }) => {
     
     return (
         <div className='classification'>
-            <h2 className='title'>Classificação Grupo A</h2>
+            <h2 className='subTitle'>Classificação Grupo A</h2>
             <table>
                 <thead>
                     <th>Seleção</th>
@@ -26,7 +23,7 @@ const Classification = ({ teamsInfos, game }) => {
                         return (
                             <tr key={i}>
                                 <td>{team.team}</td>
-                                <td>{quantityGames}</td>
+                                <td>{quantity}</td>
                                 <td>0</td>
                                 <td>0</td>
                                 <td>0</td>

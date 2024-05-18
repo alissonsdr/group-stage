@@ -10,7 +10,6 @@ const Buttons = ({ text, onClick }) => {
                 onClick={onClick}
             >{text}</button>
         </div>
-
     )
 }
 
